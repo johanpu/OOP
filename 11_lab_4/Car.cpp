@@ -34,7 +34,7 @@ void Car::printInfo() const {
 }
 
 void Car::refuel(double gallons) {
-    std::cout << "Refueling..." << std::endl;
+    std::cout << "\nRefueling..." << std::endl;
     
     double amount_empty = fuel_capacity - fuel_level;
     double fuel_added = 0;
@@ -57,6 +57,10 @@ void Car::refuel(double gallons) {
     }
 
     std::cout << "Fuel level: " << fuel_level << " gallons" << std::endl;
+}
+
+void Car::drive(double distance) {
+    
 }
 
 // Implement getters and setters
