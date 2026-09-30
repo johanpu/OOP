@@ -5,18 +5,26 @@
 
 int main(void) {
     Car toyota("Toyota", "Corolla", 2020, 23.2, 12.0);
-    toyota.printInfo();
     toyota.refuel(5); // call no matter what?
-    
+    toyota.printInfo();
     double gallons, distance;
 
     while (1) {
-        std::cout << "Enter gallons: ";
+        std::cout << "\nEnter gallons: ";
         std::cin >> gallons;
 
-        std::cout << "Enter distance: ";
+        std::cout << "\nEnter distance: ";
         std::cin >> distance;
+        
+        std::cout << "\n";
+        toyota.refuel(gallons);
+        std::cout << "\n";
+        toyota.drive(distance);
+        std::cout << "\n";
+
+        toyota.printInfo();
     }
+
 
     
     return 0;
