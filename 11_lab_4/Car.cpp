@@ -33,6 +33,14 @@ void Car::printInfo() const {
     std::cout << "Miles: " << mileage << std::endl;
 }
 
+void Car::refuel(double gallons) {
+    std::cout << "Refueling..." << std::endl;
+    
+    if (fuel_level < fuel_capacity) {
+        std::cout << "Fuel added: " << (fuel_level - fuel_capacity) << " gallons" << std::endl;
+        std::cout << "Fuel level: " << fuel_level;
+    }
+}
 
 // Implement getters and setters
 
