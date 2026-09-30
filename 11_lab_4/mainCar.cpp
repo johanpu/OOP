@@ -6,7 +6,6 @@
 int main(void) {
     Car toyota("Toyota", "Corolla", 2020, 23.2, 12.0);
     toyota.refuel(5); // call no matter what?
-    toyota.printInfo();
     double gallons, distance;
 
     while (1) {
