@@ -20,7 +20,8 @@ public:
     int         getYear() const;
     double      getMPG() const;
     double      getFuelCapacity() const;
-
+    double      getFuelLevel() const;
+    
     // Setters
     void        setMake(const std::string& mk);
     void        setModel(const std::string& md);
