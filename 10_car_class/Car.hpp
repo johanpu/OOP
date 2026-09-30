@@ -19,16 +19,16 @@ public:
     std::string getModel() const;
     int         getYear() const;
     double      getMPG() const;
-    double      getFuelLevel() const;
-    double      getMilage() const;
+    // double      getFuelLevel() const;
+    double      getFuelCapacity() const;
 
     // Setters
     void        setMake(const std::string& mk);
     void        setModel(const std::string& md);
     void        setYear(int y);
     void        setMPG(double new_mpg);
-    void        setFuelLevel(double fl);
-    void        setMilage(double mi); 
+    // void        setFuelLevel(double fl);
+    void        setFuelCapacity(double fc);
 
 private:
     std::string make;

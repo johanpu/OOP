@@ -12,7 +12,7 @@ void CarDealer::showInventory() const {
     }
 }
 
-void CarDealer::oldestCar() const {
+/* void CarDealer::oldestCar() const {
     if (inventory.empty()) {
         std::cout << "No cars in inventory yet.\n";
         return;
@@ -37,3 +37,4 @@ void CarDealer::totalCars() const {
     }
     std::cout << "There are " << total << " cars in inventory." << std::endl;
 }
+    */
