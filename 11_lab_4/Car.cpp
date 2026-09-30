@@ -7,6 +7,10 @@ Car::Car() {
     model = "-";
     year = 1900;
     mpg = 0.0;
+
+    fuel_capacity = 0.0;
+    milage = 0.0;
+    fuel_level = 0.0;
 }
 
 Car::Car(const std::string& mk, const std::string& mdl, int y, double car_mpg, double fuel_capacity) {
