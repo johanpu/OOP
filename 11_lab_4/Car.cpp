@@ -60,7 +60,21 @@ void Car::refuel(double gallons) {
 }
 
 void Car::drive(double distance) {
-    
+    double max_dist = fuel_level * mpg;
+    double traveled_dist = 0;
+    double remaining_dist = 0;
+
+    if (distance > max_dist) { // if the distance given is more than the car can travel w/ current fuel levels
+        traveled_dist = max_dist;
+        remaining_dist = distance - traveled_dist;
+        fuel_level = 0; // max distance traveled, tank empty.
+    }
+    else {
+        traveled_dist = distance;
+        fuel_level -= traveled_dist / mpg; 
+    }
+
+    mileage += traveled_dist;
 }
 
 // Implement getters and setters
