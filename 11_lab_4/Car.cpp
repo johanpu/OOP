@@ -9,7 +9,7 @@ Car::Car() {
     mpg = 0.0;
 
     fuel_capacity = 0.0;
-    milage = 0.0;
+    mileage = 0.0;
     fuel_level = 0.0;
 }
 
@@ -30,7 +30,7 @@ void Car::printInfo() const {
     std::cout << "Year\t\t" << year << std::endl;
     std::cout << "MPG\t\t" << mpg << std::endl;
     std::cout << "Fuel:\t\t" << fuel_level << std::endl;
-    std::cout << "Miles:\t\t" << milage << std::endl;
+    std::cout << "Miles:\t\t" << mileage << std::endl;
 }
 
 
