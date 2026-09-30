@@ -19,6 +19,9 @@ Car::Car(const std::string& mk, const std::string& mdl, int y, double car_mpg, d
     setYear(y);
     setMPG(car_mpg);
     setFuelCapacity(fuel_capacity);
+
+    mileage = 0.0;
+    fuel_level = 0.0;
 }
 
 void Car::printInfo() const {
@@ -46,4 +49,8 @@ void        Car::setMPG(double new_mpg) {
 
 void        Car::setFuelCapacity(double fuelCap) {
     fuel_capacity = fuelCap;
+}
+
+void        Car::getFuelLevel() const {
+    return fuel_level;
 }
