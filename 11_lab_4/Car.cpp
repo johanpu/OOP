@@ -51,6 +51,12 @@ void Car::refuel(double gallons) {
     fuel_level += fuel_added; 
 
     std::cout << "Fuel added: " << fuel_added << " gallons" << std::endl;
+
+    if (excess_fuel > 0) {
+        std::cout << "Excess fuel: " << excess_fuel << " gallons" << std::endl; // print if excess fuel exists.
+    }
+
+    std::cout << "Fuel level: " << fuel_level << " gallons" << std::endl;
 }
 
 // Implement getters and setters
