@@ -29,6 +29,8 @@ void Car::printInfo() const {
     std::cout << "Model\t\t" << model << std::endl;
     std::cout << "Year\t\t" << year << std::endl;
     std::cout << "MPG\t\t" << mpg << std::endl;
+    std::cout << "Fuel:\t\t" << fuel_level << std::endl;
+    std::cout << "Miles:\t\t" << milage << std::endl;
 }
 
 
@@ -51,6 +53,6 @@ void        Car::setFuelCapacity(double fuelCap) {
     fuel_capacity = fuelCap;
 }
 
-void        Car::getFuelLevel() const {
+double        Car::getFuelLevel() const {
     return fuel_level;
 }
