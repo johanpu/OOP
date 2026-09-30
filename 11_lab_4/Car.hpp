@@ -13,6 +13,8 @@ public:
 
     // printInfo method
     void printInfo() const;
+    void refuel(double gallons);
+    void drive(double distance);
 
     // Getters
     std::string getMake() const;
