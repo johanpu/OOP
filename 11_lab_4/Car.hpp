@@ -21,7 +21,7 @@ public:
     double      getMPG() const;
     double      getFuelCapacity() const;
     double      getFuelLevel() const;
-    
+
     // Setters
     void        setMake(const std::string& mk);
     void        setModel(const std::string& md);
@@ -35,7 +35,7 @@ private:
     int year;
     double mpg;
     double fuel_capacity;
-    double milage;
+    double mileage;
     double fuel_level;
 };
 
