@@ -73,8 +73,13 @@ void Car::drive(double distance) {
         traveled_dist = distance;
         fuel_level -= traveled_dist / mpg; 
     }
+    // NEXT COMMIT: UPDATE MILEAGE/ADD DISTANCE COVERED AND FUEL LEVEL OUTPUT
 
     mileage += traveled_dist;
+
+    std::cout << "Distance covered: " << traveled_dist << " miles (" << remaining_dist << " miles left)" << std::endl;
+    std::cout << "Fuel level: " << fuel_level << " gallons" << std::endl;
+
 }
 
 // Implement getters and setters
