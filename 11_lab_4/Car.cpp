@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "Car.hpp"
 
 Car::Car() {
@@ -10,11 +9,12 @@ Car::Car() {
     mpg = 0.0;
 }
 
-Car::Car(const std::string& mk, const std::string& mdl, int y, double car_mpg) {
+Car::Car(const std::string& mk, const std::string& mdl, int y, double car_mpg, double fuel_capacity) {
     setMake(mk);
     setModel(mdl);
     setYear(y);
     setMPG(car_mpg);
+    setFuelCapacity(fuel_capacity);
 }
 
 void Car::printInfo() const {
@@ -38,4 +38,8 @@ void        Car::setYear(int y) {
 }
 void        Car::setMPG(double new_mpg) {
     mpg = (new_mpg > 0) ? new_mpg : 0;
+}
+
+void        Car::setFuelCapacity(double fuelCap) {
+    fuel_capacity = fuelCap;
 }
