@@ -36,10 +36,21 @@ void Car::printInfo() const {
 void Car::refuel(double gallons) {
     std::cout << "Refueling..." << std::endl;
     
-    if (fuel_level < fuel_capacity) {
-        std::cout << "Fuel added: " << (fuel_level - fuel_capacity) << " gallons" << std::endl;
-        std::cout << "Fuel level: " << fuel_level;
+    double amount_empty = fuel_capacity - fuel_level;
+    double fuel_added = 0;
+    double excess_fuel = 0;
+    
+    if (gallons > amount_empty) { // if pouring more into tank than space available in tank.
+        fuel_added = amount_empty;
+        excess_fuel = gallons - amount_empty;
     }
+    else {
+        fuel_added = gallons; // else, add however many gallons specified.
+    }
+
+    fuel_level += fuel_added; 
+
+    std::cout << "Fuel added: " << fuel_added << " gallons" << std::endl;
 }
 
 // Implement getters and setters
