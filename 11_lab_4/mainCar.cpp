@@ -10,10 +10,14 @@ int main(void) {
 
     while (1) {
         std::cout << "\nEnter gallons: ";
-        std::cin >> gallons;
+        if (!(std::cin >> gallons)) { // added to break while(1) loop in case of invalid input (no other method to end program was specified).
+            break;
+        }
 
         std::cout << "\nEnter distance: ";
-        std::cin >> distance;
+        if (!(std::cin >> distance)) {
+            break;
+        }
         
         std::cout << "\n";
         toyota.refuel(gallons);
